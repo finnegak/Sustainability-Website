@@ -1,0 +1,136 @@
+/*Kelly Finnegan */
+*{
+    box-sizing:border-box;
+}
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+header, nav ul, #content-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    color:#008000;
+}
+#logo{
+    position:absolute;
+    top:0;
+    left:0;
+}
+header{
+    position:relative;
+}
+header h1,nav ul{
+    padding-left:50px;
+}
+nav {
+    background-color:#008000;
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li{
+    display:inline-block;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+nav ul li a:hover {
+    background-color:black;
+    color:#9ae39a;
+}
+main article img{
+    border: double 3px #333;
+    float:left;
+    margin-top: .5rem;
+    margin-right:1rem;
+    margin-bottom: .5rem;;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main section {
+    display: flex;
+}
+
+main section div {
+    background-color: #e7ffe7;
+    border: 1px solid #008000;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+main section div:last-child {
+    margin-right: 0;
+}
+
+main section div h2{
+    background-color: #008000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color:white;
+    margin-top:0px;
+}
+
+main section div img {
+    border: 3px solid #333;
+    display: block;
+    margin: 0 auto;
+}
+
+aside section {
+    background-color: white;
+    margin-bottom: 1rem;
+    border: 1px solid #008000;
+}
+
+aside h3 {
+    background-color: #008000;
+    color: white;
+    padding: .5rem;
+    margin: 0;
+}
+
+aside a {
+    display: inline-block;
+    padding: .5rem;
+}
+
+#content-wrapper {
+    display: flex;
+}
+
+#content-wrapper aside {
+    background-color: #ccc;
+    margin-right: 1rem;
+    padding: .5rem;
+    position: relative;
+    top: 20px;
+    order: -1;
+    flex: 1;
+}
+
+main aside h2 {
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+#content-wrapper main {
+    order: 1;
+    flex: 4;
+}
